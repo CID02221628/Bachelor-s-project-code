@@ -1,0 +1,57 @@
+{
+    "your_dataset": {
+        "text_field": "text",
+        "label_field": "",
+        "time_field": "date",
+        "source_field": "source",
+        "default_source_value": "",
+        "label_mapping": "",
+        "loss_function": "",
+        "evaluation_metric": "",
+        "data_source": "local_csv",
+        "num_labels": 1
+    },
+    "sst": {
+        "text_field": "sentence",
+        "label_field": "label",
+        "time_field": "",
+        "source_field": "",
+        "default_source_value": "sst",
+        "label_mapping": "",
+        "loss_function": "compute_huber_loss",
+        "evaluation_metric": "compute_regression_metrics",
+        "data_source": "huggingface",
+        "num_labels": 1
+    },
+    "sentiment140": {
+        "text_field": "text",
+        "label_field": "sentiment",
+        "time_field": "date",
+        "source_field": "",
+        "default_source_value": "sentiment140",
+        "label_mapping": {
+            "0": 0,
+            "2": 1,
+            "4": 2
+        },
+        "loss_function": "compute_cross_entropy",
+        "evaluation_metric": "compute_classification_metrics",
+        "data_source": "huggingface",
+        "num_labels": 3
+    },
+    "imdb": {
+        "text_field": "text",
+        "label_field": "label",
+        "time_field": "",
+        "source_field": "",
+        "default_source_value": "imdb",
+        "label_mapping": {
+            "0": 0,
+            "1": 1
+        },
+        "loss_function": "compute_cross_entropy",
+        "evaluation_metric": "compute_classification_metrics",
+        "data_source": "huggingface",
+        "num_labels": 2
+    }
+}

@@ -1,0 +1,43 @@
+[
+    {
+        "version_name": "SSTninja1000",
+        "sample_size": 1000,
+        "learning_rate": 2e-05,
+        "batch_size": 16,
+        "epochs": 3,
+        "dataset": "dataset_name",
+        "model_type": "albert-base-v2",
+        "additional_info": "",
+        "weights_filepath": "./model_versions/SSTninja1000/model.safetensors",
+        "output_mode": 1
+    },
+    {
+        "version_name": "Twitter2000(128)",
+        "sample_size": 2000,
+        "dataset": "sentiment140",
+        "model_type": "albert-base-v2",
+        "weights_filepath": "model_versions\\Twitter2000(128)\\pytorch_model.bin",
+        "output_mode": 3,
+        "learning_rate": 2e-05,
+        "batch_size": 16,
+        "epochs": 3,
+        "weight_decay": 0.01,
+        "f1_score": 0.503094460221507,
+        "accuracy": 0.5943775100401606
+    },
+    {
+        "version_name": "S140test18",
+        "sample_size": 50,
+        "dataset": "sst",
+        "model_type": "albert-base-v2",
+        "weights_filepath": "model_versions\\S140test18\\pytorch_model.bin",
+        "output_mode": 1,
+        "learning_rate": 1e-05,
+        "batch_size": 8,
+        "epochs": 5,
+        "weight_decay": 0.05,
+        "mean_squared_error": 0.030710792889062068,
+        "mean_absolute_error": 0.1427238863706589,
+        "r2_score": 0.574872715171393
+    }
+]
